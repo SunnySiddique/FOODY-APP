@@ -1,0 +1,65 @@
+.explore-menu-list {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  justify-content: center;
+  gap: 20px; /* Reduced gap for smaller screens */
+  margin-top: 40px; /* Adjusted for better spacing on smaller screens */
+  margin-bottom: 30px; /* Adjusted for better spacing on smaller screens */
+}
+
+.explore-menu-list-item {
+  border: 1px solid #9e9ea7;
+  padding: 10px 20px; /* Adjusted padding for better spacing on smaller screens */
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  font-size: 16px; /* Adjusted font size for better readability on smaller screens */
+
+  /* Center text in the item */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore-menu-list-item p {
+  margin: 0; /* Remove default margin */
+}
+
+.explore-menu-list-item:hover {
+  background: rgb(240, 80, 149);
+  color: #fff;
+  border: 1px solid rgb(240, 80, 149);
+}
+
+.explore-menu-list-item.active {
+  background: rgb(240, 80, 149);
+  color: #fff;
+  border: 1px solid rgb(240, 80, 149);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .explore-menu-list {
+    gap: 10px; /* Smaller gap for medium screens */
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .explore-menu-list-item {
+    padding: 8px 16px; /* Adjusted padding for medium screens */
+    font-size: 14px; /* Smaller font size for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .explore-menu-list {
+    gap: 5px; /* Even smaller gap for small screens */
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .explore-menu-list-item {
+    padding: 6px 12px; /* Further adjusted padding for small screens */
+    font-size: 12px; /* Smaller font size for very small screens */
+  }
+}
